@@ -109,6 +109,12 @@ SEO is configured across every page. When adding a new page, replicate this setu
 - `assets/images/og-banner.png` — 1200×630 branded banner used as the default `og:image`/`twitter:image` on the home, about, products, contact, calculator and careers pages.
 - Product pages intentionally use their own product image so each shared link previews the relevant product.
 
+**Icons & web app manifest**
+- `favicon.ico` — classic browser-tab favicon (linked on every page).
+- `assets/images/apple-touch-icon.png` — 180×180 icon for iOS "Add to Home Screen".
+- `assets/images/icon-192.png` / `icon-512.png` — PWA icons referenced by the manifest.
+- `site.webmanifest` — web app manifest (name, theme color, icons) for "Add to Home Screen" on Android/Chrome. Linked from every page's `<head>`.
+
 **Conventions**
 - Every `<img>` must have descriptive `alt` text.
 - Below-the-fold images use `loading="lazy"` and `decoding="async"`.
